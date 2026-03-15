@@ -1,0 +1,85 @@
+.wrapper {
+  display: inline-block;
+  cursor: pointer;
+  user-select: none;
+  filter: drop-shadow(0 8px 24px rgba(200,134,10,0.5));
+  transition: filter 0.2s;
+}
+
+.wrapper:hover {
+  filter: drop-shadow(0 12px 32px rgba(200,134,10,0.8));
+}
+
+.svg {
+  width: 120px;
+  height: 200px;
+  display: block;
+}
+
+/* IDLE - gentle float */
+.idle .svg {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-8px) rotate(1deg); }
+}
+
+/* PROUD - victory dance */
+.proud .svg {
+  animation: victory 0.6s ease;
+}
+
+@keyframes victory {
+  0%   { transform: scale(1) rotate(0deg); }
+  20%  { transform: scale(1.2) rotate(-8deg); }
+  40%  { transform: scale(1.25) rotate(8deg); }
+  60%  { transform: scale(1.15) rotate(-4deg); }
+  80%  { transform: scale(1.1) rotate(4deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+/* SHOCKED */
+.shocked .svg {
+  animation: shocked 0.4s ease;
+}
+
+@keyframes shocked {
+  0%   { transform: scale(1); }
+  30%  { transform: scale(0.9) translateY(4px); }
+  60%  { transform: scale(1.15) translateY(-6px); }
+  100% { transform: scale(1); }
+}
+
+/* SMUG - little shimmy */
+.smug .svg {
+  animation: shimmy 0.5s ease;
+}
+
+@keyframes shimmy {
+  0%   { transform: rotate(0deg); }
+  25%  { transform: rotate(-6deg) translateX(-4px); }
+  75%  { transform: rotate(6deg) translateX(4px); }
+  100% { transform: rotate(0deg); }
+}
+
+/* Sparkles */
+.sparkle {
+  animation: twinkle 0.6s ease-in-out 0.1s;
+  opacity: 0;
+}
+.sparkle2 {
+  animation: twinkle 0.6s ease-in-out 0.2s;
+  opacity: 0;
+}
+.sparkle3 {
+  animation: twinkle 0.6s ease-in-out 0.3s;
+  opacity: 0;
+}
+
+@keyframes twinkle {
+  0%   { opacity: 0; transform: scale(0); }
+  50%  { opacity: 1; transform: scale(1.3); }
+  100% { opacity: 0; transform: scale(0); }
+}
