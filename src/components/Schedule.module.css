@@ -1,0 +1,131 @@
+.sectionHeader {
+  font-family: 'Bangers', cursive;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #c8860a;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border-bottom: 1.5px solid #3a2000;
+  padding-bottom: 8px;
+}
+
+.form {
+  background: #2a1500;
+  border: 1.5px solid #3a2500;
+  border-radius: 14px;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  font-size: 11px;
+  color: #c8860a;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+  margin-top: 12px;
+}
+
+.form label:first-child { margin-top: 0; }
+
+.form input, .form textarea {
+  width: 100%;
+  background: #1a0a00;
+  border: 2px solid #3a2500;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 12px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.form input:focus, .form textarea:focus { border-color: #c8860a; }
+.form textarea { resize: none; height: 60px; }
+
+.form input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+.btnSchedule {
+  width: 100%;
+  margin-top: 14px;
+  background: #c8860a;
+  color: #1a0a00;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Bangers', cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  padding: 10px;
+  transition: all 0.15s;
+}
+
+.btnSchedule:hover { background: #e8a020; }
+
+.noEvents {
+  text-align: center;
+  color: #5a3820;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.card {
+  background: #2a1500;
+  border: 1.5px solid #3a2500;
+  border-radius: 14px;
+  padding: 12px 14px 12px 18px;
+  margin-bottom: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: #e8a020;
+}
+
+.cardTitle { font-weight: 800; font-size: 15px; color: #e8c080; }
+.cardTime { font-size: 12px; color: #c8860a; font-weight: 700; margin-top: 2px; }
+.cardNote { font-size: 12px; color: #b07040; font-style: italic; margin-top: 4px; }
+
+.rsvpRow {
+  display: flex;
+  gap: 6px;
+  margin-top: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.chip {
+  background: #1a0a00;
+  border: 1.5px solid #3a2500;
+  border-radius: 20px;
+  color: #e8c080;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+}
+
+.btnRsvp {
+  background: transparent;
+  border: 1.5px solid #c8860a;
+  border-radius: 10px;
+  color: #c8860a;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 4px 12px;
+  margin-left: auto;
+  transition: all 0.15s;
+}
+
+.btnRsvp:hover, .going {
+  background: #c8860a;
+  color: #1a0a00;
+}

@@ -1,0 +1,48 @@
+.sectionHeader {
+  font-family: 'Bangers', cursive;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: #c8860a;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  border-bottom: 1.5px solid #3a2000;
+  padding-bottom: 8px;
+}
+
+.empty { text-align: center; padding: 40px 20px; color: #5a3820; }
+.emptyIcon { font-size: 48px; margin-bottom: 8px; }
+.empty p { font-size: 14px; font-weight: 600; }
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 14px;
+  background: #2a1500;
+  border: 1.5px solid #3a2500;
+  border-radius: 12px;
+  margin-bottom: 8px;
+}
+
+.mine { border-color: #e8a020; background: #3a2000; }
+
+.rank {
+  font-family: 'Bangers', cursive;
+  font-size: 22px;
+  color: #c8860a;
+  width: 30px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.gold { color: #ffd700; }
+.silver { color: #c0c0c0; }
+.bronze { color: #cd7f32; }
+
+.info { flex: 1; }
+.name { font-weight: 800; font-size: 15px; color: #e8c080; }
+.title { font-size: 11px; color: #7a5030; font-weight: 700; margin-top: 1px; }
+
+.countBlock { text-align: right; }
+.count { font-family: 'Bangers', cursive; font-size: 26px; color: #e8a020; line-height: 1; }
+.countLabel { font-size: 10px; color: #7a5030; font-weight: 700; text-transform: uppercase; }

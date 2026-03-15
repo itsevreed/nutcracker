@@ -1,0 +1,16 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html, body, #root {
+  min-height: 100%;
+  background: #1a0a00;
+  font-family: 'Nunito', sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+}
+
+button { cursor: pointer; font-family: 'Nunito', sans-serif; }
+input, textarea { font-family: 'Nunito', sans-serif; color: #fff; }
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #1a0a00; }
+::-webkit-scrollbar-thumb { background: #3a2000; border-radius: 3px; }

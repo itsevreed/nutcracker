@@ -1,0 +1,226 @@
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(135deg, #c8860a 0%, #e8a020 50%, #c8860a 100%);
+  padding: 16px 20px 12px;
+  text-align: center;
+  border-bottom: 4px solid #8b5a00;
+  box-shadow: 0 4px 20px rgba(200,134,10,0.5);
+}
+
+.header h1 {
+  font-family: 'Bangers', cursive;
+  font-size: 42px;
+  color: #1a0a00;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 0 #8b5a00;
+  line-height: 1;
+}
+
+.tagline {
+  font-size: 12px;
+  color: #4a2800;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 2px;
+}
+
+.mascotArea {
+  text-align: center;
+  padding: 20px 0 10px;
+}
+
+.mascot {
+  font-size: 80px;
+  display: inline-block;
+  filter: drop-shadow(0 4px 12px rgba(200,134,10,0.6));
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s;
+}
+
+.mascot:hover { transform: scale(1.05); }
+
+.bounce {
+  animation: bounce 0.35s ease;
+}
+
+@keyframes bounce {
+  0%   { transform: scale(1) rotate(0deg); }
+  30%  { transform: scale(1.35) rotate(10deg); }
+  60%  { transform: scale(0.9) rotate(-5deg); }
+  100% { transform: scale(1) rotate(0deg); }
+}
+
+.speechBubble {
+  background: #fff;
+  color: #1a0a00;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 8px;
+  border: 2px solid #c8860a;
+  position: relative;
+}
+
+.speechBubble::before {
+  content: '';
+  position: absolute;
+  top: -10px; left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-bottom-color: #c8860a;
+}
+
+.userSection {
+  padding: 12px 20px;
+  background: #2a1500;
+  border-bottom: 2px solid #3a2000;
+}
+
+.nameInputRow {
+  display: flex;
+  gap: 8px;
+}
+
+.nameInput {
+  flex: 1;
+  background: #1a0a00;
+  border: 2px solid #c8860a;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 8px 14px;
+  outline: none;
+}
+
+.nameInput::placeholder { color: #6b4020; }
+
+.btnSet {
+  background: #c8860a;
+  color: #1a0a00;
+  border: none;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  padding: 8px 16px;
+  transition: all 0.15s;
+}
+
+.btnSet:hover { background: #e8a020; transform: scale(1.03); }
+
+.currentUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.avatar {
+  width: 36px; height: 36px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-size: 13px;
+  border: 2px solid #c8860a;
+  flex-shrink: 0;
+}
+
+.userName {
+  font-weight: 800;
+  font-size: 16px;
+  color: #e8c080;
+  flex: 1;
+}
+
+.btnChange {
+  background: transparent;
+  border: 1.5px solid #c8860a;
+  color: #c8860a;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+}
+
+.crackSection { padding: 20px; }
+
+.crackBtn {
+  width: 100%;
+  background: linear-gradient(135deg, #c8860a, #e8a020, #c8860a);
+  border: none;
+  border-radius: 20px;
+  color: #1a0a00;
+  font-family: 'Bangers', cursive;
+  font-size: 36px;
+  letter-spacing: 3px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 6px 20px rgba(200,134,10,0.5), inset 0 2px 0 rgba(255,255,255,0.2);
+  transition: all 0.15s;
+  border-bottom: 5px solid #8b5a00;
+}
+
+.crackBtn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(200,134,10,0.7);
+}
+
+.crackBtn:active {
+  transform: translateY(3px);
+  border-bottom-width: 2px;
+  box-shadow: 0 2px 8px rgba(200,134,10,0.4);
+}
+
+.crackSub {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin-top: 4px;
+}
+
+.tabs {
+  display: flex;
+  padding: 0 20px;
+  border-bottom: 2px solid #3a2000;
+}
+
+.tab {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: #7a5030;
+  font-size: 12px;
+  font-weight: 800;
+  padding: 10px 4px;
+  border-bottom: 3px solid transparent;
+  transition: all 0.2s;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.activeTab {
+  color: #e8a020;
+  border-bottom-color: #e8a020;
+}
+
+.panel { padding: 16px 20px; }
+
+.loading {
+  text-align: center;
+  padding: 40px;
+  color: #7a5030;
+  font-weight: 700;
+  font-size: 16px;
+}
